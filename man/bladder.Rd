@@ -3,28 +3,22 @@
 \docType{data}
 \name{bladder}
 \alias{bladder}
-\title{Bladder RNA-seq data from the GTEx consortium}
+\title{Bladder dataset}
 \format{
-An object of class \code{"ExpressionSet"}, see \code{\linkS4class{ExpressionSet}}.
-}
-\source{
-GTEx Portal
+An object of class "ExpressionSet".
 }
 \usage{
 data(bladder)
 }
 \value{
-ExpressionSet object
+An object of class "ExpressionSet".
 }
 \description{
 Bladder RNA-seq data from the GTEx consortium. V6 release.
 }
-\examples{
-\donttest{data(bladder);
-checkMisAnnotation(bladder, "GENDER");}
-}
 \references{
-GTEx Consortium, 2015. The Genotype-Tissue Expression (GTEx) pilot analysis: Multitissue gene regulation in humans. Science, 348(6235), pp.648-660.
-(\href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4547484/}{PubMed})
+GTEx Consortium, 2015. The Genotype-Tissue Expression (GTEx) 
+pilot analysis: Multitissue gene regulation in humans. Science, 348(6235), 
+pp.648-660.
 }
 \keyword{datasets}

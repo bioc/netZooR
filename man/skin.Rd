@@ -3,29 +3,22 @@
 \docType{data}
 \name{skin}
 \alias{skin}
-\title{Skin RNA-seq data from the GTEx consortium}
+\title{Skin dataset}
 \format{
-An object of class \code{"ExpressionSet"}, see \code{\linkS4class{ExpressionSet}}.
-}
-\source{
-GTEx Portal
+An object of class "ExpressionSet".
 }
 \usage{
 data(skin)
 }
 \value{
-ExpressionSet object
+An object of class "ExpressionSet".
 }
 \description{
-Skin RNA-seq data from the GTEx consortium. V6 release. Random selection of 20 skin samples.
-13 of the samples are fibroblast cells, 5 Skin sun exposed, 2 sun unexposed.
-}
-\examples{
-\donttest{data(skin);
-checkMisAnnotation(skin,"GENDER");}
+Skin RNA-seq data from the GTEx consortium. V6 release.
 }
 \references{
-GTEx Consortium, 2015. The Genotype-Tissue Expression (GTEx) pilot analysis: Multitissue gene regulation in humans. Science, 348(6235), pp.648-660.
-(\href{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4547484/}{PubMed})
+GTEx Consortium, 2015. The Genotype-Tissue Expression (GTEx) 
+pilot analysis: Multitissue gene regulation in humans. Science, 348(6235), 
+pp.648-660.
 }
 \keyword{datasets}

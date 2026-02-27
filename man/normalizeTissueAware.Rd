@@ -23,7 +23,7 @@ for the ids to filter. Default is the column names}
 
 \item{normalizationMethod}{Choice of 'qsmooth' or 'quantile'}
 
-\item{...}{Options for \code{\link{limma::qsmooth}} function or \code{\link{limma::normalizeQuantiles}}}
+\item{...}{Options for \code{\link{qsmooth}} function or \code{\link[limma]{normalizeQuantiles}}}
 }
 \value{
 ExpressionSet object with an assayData called normalizedMatrix
@@ -36,8 +36,7 @@ a condition aware manner.
 }
 \examples{
 \donttest{
-u <- 'https://netzoo.s3.us-east-2.amazonaws.com/netZooR/unittest_datasets/yarn/'
-skin <- tryCatch({tmp<-tempfile(); download.file(paste0(u,'skin.rdata'),tmp,quiet=TRUE); local({load(tmp);get('skin')})}, error=function(e) NULL)
+data(skin)
 if(!is.null(skin)) normalizeTissueAware(skin,"SMTSD")
 }
 

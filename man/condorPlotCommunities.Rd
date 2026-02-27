@@ -28,7 +28,7 @@ communities.}
 \item{ylab}{y axis label}
 }
 \value{
-produces a \code{\link{plot}} output.
+produces a \code{\link[graphics]{plot}} output.
 }
 \description{
 This function will generate the network link 'heatmap' with colored dots
