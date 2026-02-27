@@ -31,7 +31,7 @@ Options include "pearson".}
 \item{ncores}{int specifying the number of cores to be used. Default is 1. 
 (Note: constructing panda networks can be memory-intensive, and the number of cores should take into consideration available memory.)}
 
-\item{mode}{Aggregation mode between three input networks: Union (default), intersection, legacy (maps on motif network).}
+\item{mode}{'legacy' refers to the processing mode in netZooPy<=0.5, 'union': takes the union of all TFs and genes across priors and fills the missing genes in the priors with zeros; 'intersection': intersects the input genes and TFs across priors and removes the missing TFs/genes. Default values is 'union'.}
 
 \item{...}{additional arguments for panda analysis}
 }

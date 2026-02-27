@@ -37,6 +37,12 @@ ExpressionSet object with a fuller featureData.
 Annotate your Expression Set with biomaRt
 }
 \examples{
+\dontrun{
+u <- 'https://netzoo.s3.us-east-2.amazonaws.com/netZooR/unittest_datasets/'
+bladder <- paste0(u, 'yarn/bladder.rdata')
+skin <- paste0(u, 'yarn/skin.rdata')
+download.file(bladder, destfile='netZooR/data/bladder.rdata')
+download.file(skin, destfile='netZooR/data/skin.rdata')
 data(skin)
 # subsetting and changing column name just for a silly example
 skin <- skin[1:10,]
@@ -45,5 +51,6 @@ biomart<-"ENSEMBL_MART_ENSEMBL";
 genes <- sapply(strsplit(rownames(skin),split="\\\\."),function(i)i[1])
 newskin <-annotateFromBiomart(skin,genes=genes,biomart=biomart)
 head(fData(newskin)[,7:11])
+}
 
 }
